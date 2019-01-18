@@ -1,0 +1,3 @@
+rootProject.name = 'TrampoApp'
+
+include ':app'
