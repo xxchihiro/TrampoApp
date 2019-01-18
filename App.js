@@ -1,49 +1,44 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import { Navigation } from "react-native-navigation";
+import { Provider } from "react-redux";
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import AuthScreen from "./src/screens/Auth/Auth";
+import SharePlaceScreen from "./src/screens/SharePlace/SharePlace";
+import FindPlaceScreen from "./src/screens/FindPlace/FindPlace";
+import PlaceDetailScreen from "./src/screens/PlaceDetail/PlaceDetail";
+import configureStore from "./src/store/configureStore";
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+const store = configureStore();
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
-  }
-}
+// Register Screens
+Navigation.registerComponent(
+    "awesome-places.AuthScreen",
+    () => AuthScreen,
+    store,
+    Provider
+);
+Navigation.registerComponent(
+    "awesome-places.SharePlaceScreen",
+    () => SharePlaceScreen,
+    store,
+    Provider
+);
+Navigation.registerComponent(
+    "awesome-places.FindPlaceScreen",
+    () => FindPlaceScreen,
+    store,
+    Provider
+);
+Navigation.registerComponent(
+    "awesome-places.PlaceDetailScreen",
+    () => PlaceDetailScreen,
+    store,
+    Provider
+)
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+// Start a App
+Navigation.startSingleScreenApp({
+    screen: {
+        screen: "awesome-places.AuthScreen",
+        title: "Login"
+    }
 });
