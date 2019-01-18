@@ -5,7 +5,7 @@ import calendarIcon from '../../assets/calendar.svg'
 
 const startTabs = () => {
     Promise.all([
-        Icon.getImageSource("md-map", 30),
+        Icon.getImageSource("md-paper", 30),
         Icon.getImageSource("ios-share-alt", 30)
 
     ]).then(sources => {
