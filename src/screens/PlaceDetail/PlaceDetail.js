@@ -13,6 +13,12 @@ import Icon from "react-native-vector-icons/Ionicons";
 import { deletePlace } from "../../store/actions/index";
 
 class PlaceDetail extends Component {
+
+  // HIDE TAB BAR
+  static navigatorStyle = {
+    tabBarHidden: true
+  };
+
   placeDeletedHandler = () => {
     this.props.onDeletePlace(this.props.selectedPlace.key);
     this.props.navigator.pop();

@@ -18,6 +18,7 @@ class FindPlaceScreen extends Component {
     });
   };
 
+
   render() {
     return (
       <View>
