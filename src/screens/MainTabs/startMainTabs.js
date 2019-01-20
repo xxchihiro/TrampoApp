@@ -25,7 +25,7 @@ const startTabs = () => {
                     icon: sources[1]
                 },
                 {
-                    screen: "awesome-places.SharePlaceScreen",
+                    screen: "trampo.WorkerAllocationScreen",
                     label: "Allocation",
                     title: "Allocation",
                     icon: sources[2]
