@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { CheckBox } from 'react-native-elements'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+
 
 
 import OnboardButton from '../../../components/OnboardButton/OnboardButton'
@@ -33,7 +35,7 @@ class RegisterScreen extends Component {
     };
     render () {
         return (
-            <ScrollView style={styles.container}>
+            <KeyboardAwareScrollView style={styles.container}>
                 <BackButton handler={this.backButtonHandler}/>
                 <Text style={styles.title}>Create Account</Text>
                 <View style={styles.nameContainer}>
@@ -66,7 +68,7 @@ class RegisterScreen extends Component {
                 <View style={{flex:1, flexDirection:'row', justifyContent: 'flex-end'}}>
                     <OnboardButton text={"Next"} handler={this.nextButtonHandler}/>
                 </View>
-            </ScrollView>
+            </KeyboardAwareScrollView>
         );
     }
 }
