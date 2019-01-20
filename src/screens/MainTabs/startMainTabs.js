@@ -16,7 +16,7 @@ const startTabs = () => {
                     screen: "awesome-places.FindPlaceScreen",
                     label: "Dashboard",
                     title: "Dashboard",
-                    icon: sources[0]
+                    icon: sources[0],
                 },
                 {
                     screen: "awesome-places.SharePlaceScreen",

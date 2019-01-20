@@ -8,6 +8,14 @@ const styles = StyleSheet.create({
         borderBottomColor: "#dfdfe4",
         borderBottomWidth: 1,
         marginBottom: 25,
+    },
+    halfinput:{
+        width: "47%",
+        height: 36,
+        borderBottomColor: "#dfdfe4",
+        borderBottomWidth: 1,
+        marginBottom: 25,
+        marginRight: '3%'
     }
 });
 

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {View, Text, Image, TouchableOpacity, KeyboardAvoidingView} from 'react-native';
-import SvgUri from 'react-native-svg-uri';
 
 import startMainTabs from '../../MainTabs/startMainTabs';
 
 import OnboardInput from '../../../components/OnboardInput/OnboardInput'
+import OnboardButton from '../../../components/OnboardButton/OnboardButton'
+import OnboardTextButton from '../../../components/OnboardTextButton/OnboardTextButton'
 import styles from './Login.styles'
 
 import trampoLogo from '../../../assets/trampo-logo.png'
@@ -34,18 +35,12 @@ class AuthScreen extends Component {
                     <OnboardInput placeholder={"Password"} password={true}/>
                 </View>
                 <View style={styles.loginContainer}>
-                    <TouchableOpacity style={styles.passwordButton}>
-                        <Text style={styles.passwordButtonText}>Forgot password?</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={this.loginHandler} style={styles.loginButton}>
-                        <Text style={styles.loginButtonText}>Login</Text>
-                    </TouchableOpacity>
+                    <OnboardTextButton text={"Forgot password?"}/>
+                    <OnboardButton text={"Login"} handler={this.loginHandler}/>
                 </View>
                 <View style={styles.registerContainer}>
                     <Text style={styles.registerButtonCap}>Without account?</Text>
-                    <TouchableOpacity onPress={this.registerButtonHandler} style={styles.registerButton}>
-                        <Text style={styles.registerButtonText}>Create one</Text>
-                    </TouchableOpacity>
+                    <OnboardTextButton handler={this.registerButtonHandler} text={"Create one"}/>
                 </View>
             </KeyboardAvoidingView>
         );

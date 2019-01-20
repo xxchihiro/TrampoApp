@@ -16,7 +16,8 @@ class PlaceDetail extends Component {
 
   // HIDE TAB BAR
   static navigatorStyle = {
-    tabBarHidden: true
+    tabBarHidden: true,
+      navBarHidden: true
   };
 
   placeDeletedHandler = () => {

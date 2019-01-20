@@ -7,7 +7,7 @@ class OnboardInput extends Component{
         return (
             <TextInput
                 placeholder={this.props.placeholder}
-                style={styles.input}
+                style={this.props.half? styles.halfinput: styles.input}
                 secureTextEntry={this.props.password || false}
                 autoCapitalize={'none'}
                 keyboardType={this.props.email? 'email-address': 'default' }

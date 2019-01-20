@@ -2,6 +2,7 @@ import { Navigation } from "react-native-navigation";
 import { Provider } from "react-redux";
 import { navigatorStyle } from "./src/styles/navigatorStyles";
 
+
 //ONBOARDING
 import AuthScreen from "./src/screens/Onboard/Login/Login";
 import RegisterScreen from "./src/screens/Onboard/Register/Register"
