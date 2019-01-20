@@ -5,7 +5,7 @@ import {TouchableOpacity} from "react-native";
 class BackButton extends Component {
     render(){
         return (
-            <TouchableOpacity onPress={this.props.handler}>
+            <TouchableOpacity onPress={this.props.handler} style={{maxWidth: 25}}>
                 <Icon name="keyboard-backspace" size={30} color="#000"/>
             </TouchableOpacity>
         )

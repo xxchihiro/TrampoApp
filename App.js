@@ -7,7 +7,8 @@ import { navigatorStyle } from "./src/styles/navigatorStyles";
 import AuthScreen from "./src/screens/Onboard/Login/Login";
 import RegisterScreen from "./src/screens/Onboard/Register/Register"
 import OnboardProfileScreen from "./src/screens/Onboard/Profile/Profile"
-
+import WorkerDashboardScreen from "./src/screens/Worker/Dashboard/Dashboard"
+import WorkerQRScreen from "./src/screens/Worker/QR/QR"
 import SharePlaceScreen from "./src/screens/SharePlace/SharePlace";
 import FindPlaceScreen from "./src/screens/FindPlace/FindPlace";
 import PlaceDetailScreen from "./src/screens/PlaceDetail/PlaceDetail";
@@ -31,6 +32,18 @@ Navigation.registerComponent(
 Navigation.registerComponent(
     "trampo.OnboardProfileScreen",
     () => OnboardProfileScreen,
+    store,
+    Provider
+);
+Navigation.registerComponent(
+    "trampo.WorkerDashboardScreen",
+    () => WorkerDashboardScreen,
+    store,
+    Provider
+);
+Navigation.registerComponent(
+    "trampo.WorkerQRScreen",
+    () => WorkerQRScreen,
     store,
     Provider
 );

@@ -13,6 +13,7 @@
     "react-native": "0.57.8",
     "react-native-elements": "^1.0.0-beta7",
     "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-native-mask": "^0.5.0",
     "react-native-navigation": "^1.1.493",
     "react-native-simple-radio-button": "^2.7.3",
     "react-native-svg": "^9.0.0",

@@ -13,7 +13,7 @@ const startTabs = () => {
         Navigation.startTabBasedApp({
             tabs: [
                 {
-                    screen: "awesome-places.FindPlaceScreen",
+                    screen: "trampo.WorkerDashboardScreen",
                     label: "Dashboard",
                     title: "Dashboard",
                     icon: sources[0],
