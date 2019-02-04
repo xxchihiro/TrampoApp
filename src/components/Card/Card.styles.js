@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     textContainer:{
         height: 96,
         paddingTop: 14,
-        paddingLeft: 18
+        paddingLeft: 18,
     },
     title:{
         fontSize: 20,
@@ -52,12 +52,23 @@ const styles = StyleSheet.create({
         letterSpacing: 0,
         color: "#bababa"
     },
+    locationContainer:{
+        flexDirection: 'row',
+        paddingTop: 12,
+        alignItems: 'center'
+    },
     location:{
         fontSize: 13,
         fontWeight: "normal",
         fontStyle: "normal",
         letterSpacing: 0,
-        color: "#bababa"
+        color: "#bababa",
+        paddingLeft: 5
+    },
+    rightArea:{
+        marginLeft: 'auto',
+        paddingRight: 20,
+        paddingTop: 18
     }
 })
 

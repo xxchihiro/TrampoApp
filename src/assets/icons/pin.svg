@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="worker---0.main" transform="translate(-56.000000, -266.000000)" fill="#BABABA" fill-rule="nonzero" stroke="#BABABA" stroke-width="0.5">
+            <g id="Group" transform="translate(32.000000, 196.000000)">
+                <g id="Icon-/-24x24-/-Location" transform="translate(24.000000, 70.000000)">
+                    <path d="M5,0.5 C7.475,0.5 9.5,2.53663793 9.5,5.02586207 C9.5,8.375 5.405,11.1810345 5.27,11.2715517 C5.18,11.3168103 5.09,11.362069 5,11.362069 C4.91,11.362069 4.82,11.3168103 4.73,11.2715517 C4.595,11.1810345 0.5,8.375 0.5,5.02586207 C0.5,2.53663793 2.525,0.5 5,0.5 Z M5,2.74183303 C3.79971805,2.74183303 2.81766917,3.72952586 2.81766917,4.93670599 C2.81766917,6.14388612 3.79971805,7.13157895 5,7.13157895 C6.20028195,7.13157895 7.18233083,6.14388612 7.18233083,4.93670599 C7.18233083,3.72952586 6.20028195,2.74183303 5,2.74183303 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

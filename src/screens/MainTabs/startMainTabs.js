@@ -36,7 +36,21 @@ const startTabs = () => {
                     title: "Profile",
                     icon: sources[3]
                 }
-            ]
+            ],
+            tabsStyle: {
+                tabBarButtonColor: "#bababa",
+                tabBarSelectedButtonColor: "#277fa2",
+                tabBarBackgroundColor: '#ffffff',
+                navBarTextFontSize: 13,
+                forceTitlesDisplay: true,
+            },
+            appStyle:{
+                tabBarButtonColor: "#bababa",
+                tabBarSelectedButtonColor: "#277fa2",
+                tabBarBackgroundColor: '#ffffff',
+                navBarTextFontSize: 13,
+                forceTitlesDisplay: true,
+            }
         });
     });
 };
