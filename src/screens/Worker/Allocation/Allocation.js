@@ -12,7 +12,7 @@ class Allocation extends Component{
         return(
             // TODO: FLATLIST
             <View style={styles.container}>
-                <Text style={styles.title}>Allocation</Text>
+                <Text style={styles.title}>My Allocation</Text>
                 <View style={styles.listContainer}>
                     <AllocationListItem confirmed={true}/>
                     <AllocationListItem confirmed={false}/>

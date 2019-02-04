@@ -6,9 +6,9 @@ import Icon from "react-native-vector-icons/FontAwesome5";
 
 
 class Dashboard extends Component {
-    static navigatorStyle = {
-        navBarHidden: true
-    };
+    // static navigatorStyle = {
+    //     navBarHidden: true,
+    // };
     QRButtonHandler = () => {
         this.props.navigator.push({
             screen: "trampo.WorkerQRScreen"

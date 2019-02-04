@@ -4,7 +4,8 @@ import {StyleSheet} from 'react-native'
 const styles = StyleSheet.create({
     container:{
         paddingHorizontal: 32,
-        paddingTop: 60
+        paddingTop: 60,
+        backgroundColor: '#fafafa'
     },
     topContainer: {
         flex:1,

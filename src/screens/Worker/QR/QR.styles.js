@@ -4,18 +4,20 @@ import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
     container:{
-        paddingTop: 50,
+        paddingTop: 33,
         paddingHorizontal: 32,
         flex: 1,
         flexDirection: 'column',
-        justifyContent: 'space-between'
+        // justifyContent: 'space-between',
+        backgroundColor: '#fafafa'
     },
     topContainer:{
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        maxHeight: 30
+        maxHeight: 30,
+        // backgroundColor: 'red'
     },
     title:{
         fontWeight: "700",
@@ -30,18 +32,18 @@ const styles = StyleSheet.create({
         height: 30
     },
     qrContainer:{
-        paddingTop: 140,
-        alignItems: 'center'
+        alignItems: 'center',
+        // backgroundColor: 'blue',
+        paddingTop: 160,
+        paddingBottom: 150
     },
     divider:{
         height: 1,
         backgroundColor: "#d3d9e0",
-        marginTop: 140
     },
     textContainer:{
         alignItems: 'center',
-        marginTop: 18,
-        paddingBottom: 80,
+        // backgroundColor: 'red'
     },
     text:{
         width: "60%",
@@ -51,7 +53,8 @@ const styles = StyleSheet.create({
         lineHeight: 20,
         letterSpacing: -0.5,
         textAlign: "center",
-        color: "#8b8b8b"
+        color: "#8b8b8b",
+        marginTop: 18
     }
 
 })

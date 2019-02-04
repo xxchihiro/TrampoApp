@@ -18,6 +18,7 @@ import configureStore from "./src/store/configureStore";
 const store = configureStore();
 
 // Register Screens
+
 Navigation.registerComponent(
     "awesome-places.AuthScreen",
     () => AuthScreen,

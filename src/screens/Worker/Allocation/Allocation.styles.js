@@ -7,12 +7,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
     },
     title:{
-        fontWeight: "700",
+        fontSize: 16,
+        fontWeight: "600",
         fontStyle: "normal",
         letterSpacing: 0,
         textAlign: "center",
-        color: "#000000",
-        paddingTop: 5
+        color: "#000000"
     },
     listContainer: {
         marginTop: 40

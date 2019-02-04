@@ -17,6 +17,9 @@ const startTabs = () => {
                     label: "Dashboard",
                     title: "Dashboard",
                     icon: sources[0],
+                    navigatorStyle:{
+                        navBarHidden: true,
+                    }
                 },
                 {
                     screen: "awesome-places.SharePlaceScreen",
@@ -43,6 +46,7 @@ const startTabs = () => {
                 tabBarBackgroundColor: '#ffffff',
                 navBarTextFontSize: 13,
                 forceTitlesDisplay: true,
+                tabBarHideShadow: true
             },
             appStyle:{
                 tabBarButtonColor: "#bababa",
@@ -50,7 +54,9 @@ const startTabs = () => {
                 tabBarBackgroundColor: '#ffffff',
                 navBarTextFontSize: 13,
                 forceTitlesDisplay: true,
-            }
+
+            },
+
         });
     });
 };

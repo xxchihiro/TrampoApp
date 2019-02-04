@@ -4,11 +4,34 @@ import {StyleSheet} from 'react-native'
 const styles = StyleSheet.create({
     container:{
         flexDirection:'row',
-        borderBottomColor: "#CBC9D5",
+        borderBottomColor: "#F5F5F5",
         borderBottomWidth: 1,
-        height: 65,
-        paddingTop: 15
+        paddingTop: 15,
+        paddingBottom: 20,
+        // backgroundColor: 'red'
     },
+    textContainer:{
+        marginLeft: 15
+    },
+    jobTitle:{
+        fontSize: 12,
+        fontWeight: "500",
+        fontStyle: "normal",
+        letterSpacing: 0,
+        color: "#4a4a4a"
+    },
+    jobTime:{
+        fontSize: 11,
+        fontWeight: "500",
+        fontStyle: "normal",
+        letterSpacing: 0.37,
+        color: "#9b9b9b"
+    },
+    tagContainer:{
+        // backgroundColor: 'blue',
+        marginLeft: 'auto'
+    },
+
     tag:{
         width: 55,
         height: 17,

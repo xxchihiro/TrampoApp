@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {View, Text, Image, TouchableOpacity, KeyboardAvoidingView} from 'react-native';
+import SvgUri from 'react-native-svg-uri';
+
 
 import startMainTabs from '../../MainTabs/startMainTabs';
 
@@ -8,7 +10,6 @@ import OnboardButton from '../../../components/OnboardButton/OnboardButton'
 import OnboardTextButton from '../../../components/OnboardTextButton/OnboardTextButton'
 import styles from './Login.styles'
 
-import trampoLogo from '../../../assets/trampo-logo.png'
 
 class AuthScreen extends Component {
     //GO TO MAIN PAGE
@@ -28,7 +29,8 @@ class AuthScreen extends Component {
         return (
             <KeyboardAvoidingView style={styles.container} behavior={"padding"} enabled>
                 <View style={styles.logoContainer}>
-                    <Image source={trampoLogo} style={styles.logo}/>
+                    <SvgUri width="125" height="28" source={require('../../../assets/logo/trampo-logo.svg')}/>
+                    {/*<Image source={trampoLogo} style={styles.logo}/>*/}
                 </View>
                 <View style={styles.inputContainer}>
                     <OnboardInput placeholder={"Email address"} email={true}/>
