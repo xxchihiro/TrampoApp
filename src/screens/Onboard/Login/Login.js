@@ -3,7 +3,8 @@ import {View, Text, Image, TouchableOpacity, KeyboardAvoidingView} from 'react-n
 import SvgUri from 'react-native-svg-uri';
 
 
-import startMainTabs from '../../MainTabs/startMainTabs';
+import startMainTabsWorker from '../../MainTabs/startMainTabsWorker';
+import startMainTabsSupervisor from '../../MainTabs/startMainTabsSupervisor'
 
 import OnboardInput from '../../../components/OnboardInput/OnboardInput'
 import OnboardButton from '../../../components/OnboardButton/OnboardButton'
@@ -14,13 +15,21 @@ import styles from './Login.styles'
 class AuthScreen extends Component {
     //GO TO MAIN PAGE
     loginHandler = () => {
-        startMainTabs();
+        if (this.state.userType === 'worker'){
+            startMainTabsWorker();
+        } else {
+            startMainTabsSupervisor();
+        }
     }
     //GO TO REGISTER PAGE
     registerButtonHandler = () => {
         this.props.navigator.push({
             screen: "trampo.RegisterScreen"
         })
+    }
+
+    state = {
+        userType: 'supervisor'
     }
 
 

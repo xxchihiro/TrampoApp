@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, KeyboardAvoidingView, Image, ScrollView } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
-import startMainTabs from '../../MainTabs/startMainTabs';
+import startMainTabs from '../../MainTabs/startMainTabsWorker';
 import styles from './Profile.styles'
 import BackButton from "../../../components/BackButton/BackButton";
 import OnboardTextButton from "../../../components/OnboardTextButton/OnboardTextButton";
