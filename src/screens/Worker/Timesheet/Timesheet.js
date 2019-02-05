@@ -9,11 +9,13 @@ import {Agenda} from 'react-native-calendars';
 export default class AgendaScreen extends Component {
 
     static navigatorStyle = {
-        navBarTextColor: "#8b8b8b",
-        navBarTitleFontSize: 14,
-        navBarSubtitleFontSize: 20,
-        navBarNoBorder: true,
+        // navBarTextColor: "#8b8b8b",
+        // navBarTitleFontSize: 14,
+        // navBarSubtitleFontSize: 20,
+        // navBarNoBorder: true,
+        navBarCustomView: 'trampo.CustomNav'
     };
+
 
     constructor(props) {
         super(props);
@@ -27,8 +29,10 @@ export default class AgendaScreen extends Component {
         }
         props.navigator.setTitle({
             title: "This week, you've worked",
-            subtitle: '25hours'
+            subtitle: '25hours',
+
         });
+
     }
 
     render() {
@@ -51,7 +55,7 @@ export default class AgendaScreen extends Component {
                    '2019-05-25': {selected: true, marked: true},
                    '2019-05-26': {selected: true, marked: true}
                 }}
-                monthFormat={'yyyy MM'}
+                // monthFormat={'yyyy MM'}
                 theme={{
                     calendarBackground: '#ffffff',
                     agendaKnobColor: '#cbc9d5',
