@@ -12,7 +12,7 @@ export default class AgendaScreen extends Component {
         // navBarTextColor: "#8b8b8b",
         // navBarTitleFontSize: 14,
         // navBarSubtitleFontSize: 20,
-        // navBarNoBorder: true,
+        navBarNoBorder: true,
         navBarCustomView: 'trampo.CustomNav'
     };
 
@@ -46,14 +46,14 @@ export default class AgendaScreen extends Component {
                 rowHasChanged={this.rowHasChanged.bind(this)}
                 // markingType={'period'}
                 markedDates={{
-                   '2019-05-08': {textColor: '#666'},
-                   '2019-05-09': {textColor: '#666'},
-                   '2019-05-14': {selected: true, marked: true},
+                   '2019-05-08': {marked: true},
+                   '2019-05-09': {marked: true},
+                   '2019-05-14': {marked: true},
                    '2019-05-21': {marked: true},
-                   '2019-05-22': {selected: true, marked: true},
-                   '2019-05-24': {selected: true, marked: true},
-                   '2019-05-25': {selected: true, marked: true},
-                   '2019-05-26': {selected: true, marked: true}
+                   '2019-05-22': {marked: true},
+                   '2019-05-24': {marked: true},
+                   '2019-05-25': {marked: true},
+                   '2019-05-26': {marked: true}
                 }}
                 // monthFormat={'yyyy MM'}
                 theme={{
@@ -93,9 +93,10 @@ export default class AgendaScreen extends Component {
                 items: newItems
             });
         }, 1000);
-        // console.log(`Load Items for ${day.year}-${day.month}`);
+
     }
 
+    // TODO: style item component
     renderItem(item) {
         return (
             <View style={[styles.item, {height: item.height}]}><Text>{item.name}</Text></View>

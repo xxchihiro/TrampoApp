@@ -7,7 +7,8 @@ import QRImage from '../../../assets/qr.png'
 
 class QR extends Component{
     static navigatorStyle = {
-        navBarHidden: true
+        navBarHidden: true,
+        tabBarHidden: true
     };
     backButtonHandler = () => {
         this.props.navigator.pop()

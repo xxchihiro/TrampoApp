@@ -6,12 +6,14 @@ import Icon from "react-native-vector-icons/FontAwesome5";
 
 
 class Dashboard extends Component {
-    // static navigatorStyle = {
-    //     navBarHidden: true,
-    // };
     QRButtonHandler = () => {
         this.props.navigator.push({
             screen: "trampo.WorkerQRScreen"
+        })
+    }
+    JobTouchHandler = () => {
+        this.props.navigator.push({
+            screen: "trampo.WorkerJobScreen"
         })
     }
     render(){
@@ -29,7 +31,7 @@ class Dashboard extends Component {
 
                 <View style={styles.cardContainer}>
                     <Text style={styles.cardCaption}>Today’s Jobs</Text>
-                    <Card pending={false}></Card>
+                    <Card pending={false} onItemSelected={this.JobTouchHandler}></Card>
                 </View>
 
                 <View style={styles.cardContainer}>
