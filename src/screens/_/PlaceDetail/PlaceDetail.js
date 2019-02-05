@@ -10,7 +10,7 @@ import {
 import { connect } from "react-redux";
 
 import Icon from "react-native-vector-icons/Ionicons";
-import { deletePlace } from "../../store/actions/index";
+import { deletePlace } from "../../../store/actions/index";
 
 class PlaceDetail extends Component {
 

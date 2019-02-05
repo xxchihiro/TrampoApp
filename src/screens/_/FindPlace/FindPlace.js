@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View, Text } from "react-native";
 import { connect } from "react-redux";
 
-import PlaceList from "../../components/PlaceList/PlaceList";
+import PlaceList from "../../../components/_/PlaceList/PlaceList";
 
 class FindPlaceScreen extends Component {
   itemSelectedHandler = key => {

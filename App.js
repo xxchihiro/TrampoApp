@@ -1,6 +1,6 @@
 import { Navigation } from "react-native-navigation";
 import { Provider } from "react-redux";
-import { navigatorStyle } from "./src/styles/navigatorStyles";
+// import { navigatorStyle } from "./src/styles/navigatorStyles";
 
 
 //ONBOARDING
@@ -16,9 +16,9 @@ import WorkerTimesheetScreen from "./src/screens/Worker/Timesheet/Timesheet"
 import WorkerJobScreen from './src/screens/Worker/Job/Job'
 
 
-import SharePlaceScreen from "./src/screens/SharePlace/SharePlace";
-import FindPlaceScreen from "./src/screens/FindPlace/FindPlace";
-import PlaceDetailScreen from "./src/screens/PlaceDetail/PlaceDetail";
+import SharePlaceScreen from "./src/screens/_/SharePlace/SharePlace";
+import FindPlaceScreen from "./src/screens/_/FindPlace/FindPlace";
+import PlaceDetailScreen from "./src/screens/_/PlaceDetail/PlaceDetail";
 import configureStore from "./src/store/configureStore";
 
 const store = configureStore();
@@ -105,7 +105,7 @@ Navigation.startSingleScreenApp({
         screen: "awesome-places.AuthScreen",
         title: "Login",
         navigatorStyle: {
-            ...navigatorStyle
+            navBarHidden: true
         }
     }
 });
