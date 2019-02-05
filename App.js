@@ -15,6 +15,7 @@ import WorkerAllocationScreen from "./src/screens/Worker/Allocation/Allocation"
 import WorkerTimesheetScreen from "./src/screens/Worker/Timesheet/Timesheet"
 import WorkerJobScreen from './src/screens/Worker/Job/Job'
 
+import ProfileScreen from './src/screens/Profile/Profile/Profile'
 
 import SharePlaceScreen from "./src/screens/_/SharePlace/SharePlace";
 import FindPlaceScreen from "./src/screens/_/FindPlace/FindPlace";
@@ -24,6 +25,7 @@ import configureStore from "./src/store/configureStore";
 const store = configureStore();
 
 // Register Screens
+
 Navigation.registerComponent(
     "trampo.CustomNav",
     () => CustomNav,
@@ -98,6 +100,14 @@ Navigation.registerComponent(
     store,
     Provider
 )
+
+// Profile
+Navigation.registerComponent(
+    "trampo.ProfileScreen",
+    () => ProfileScreen,
+    store,
+    Provider
+);
 
 // Start a App
 Navigation.startSingleScreenApp({

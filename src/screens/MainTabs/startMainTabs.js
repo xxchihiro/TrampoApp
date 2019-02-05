@@ -33,7 +33,7 @@ const startTabs = () => {
                     icon: sources[2]
                 },
                 {
-                    screen: "awesome-places.SharePlaceScreen",
+                    screen: "trampo.ProfileScreen",
                     label: "Profile",
                     title: "Profile",
                     icon: sources[3]

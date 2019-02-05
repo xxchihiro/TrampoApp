@@ -6,7 +6,7 @@ import startMainTabs from '../../MainTabs/startMainTabs';
 import styles from './Profile.styles'
 import BackButton from "../../../components/BackButton/BackButton";
 import OnboardTextButton from "../../../components/OnboardTextButton/OnboardTextButton";
-import PositionTab from "../../../components/_/PositionTab/PositionTab";
+import PositionTab from "../../../components/PositionTab/PositionTab";
 import ProfileInput from "../../../components/ProfileInput/ProfileInput"
 import Divider from "../../../assets/divider.png"
 
