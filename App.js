@@ -10,6 +10,7 @@ import OnboardProfileScreen from "./src/screens/Onboard/Profile/Profile"
 import WorkerDashboardScreen from "./src/screens/Worker/Dashboard/Dashboard"
 import WorkerQRScreen from "./src/screens/Worker/QR/QR"
 import WorkerAllocationScreen from "./src/screens/Worker/Allocation/Allocation"
+import WorkerTimesheetScreen from "./src/screens/Worker/Timesheet/Timesheet"
 import SharePlaceScreen from "./src/screens/SharePlace/SharePlace";
 import FindPlaceScreen from "./src/screens/FindPlace/FindPlace";
 import PlaceDetailScreen from "./src/screens/PlaceDetail/PlaceDetail";
@@ -52,6 +53,12 @@ Navigation.registerComponent(
 Navigation.registerComponent(
     "trampo.WorkerAllocationScreen",
     () => WorkerAllocationScreen,
+    store,
+    Provider
+);
+Navigation.registerComponent(
+    "trampo.WorkerTimesheetScreen",
+    () => WorkerTimesheetScreen,
     store,
     Provider
 );

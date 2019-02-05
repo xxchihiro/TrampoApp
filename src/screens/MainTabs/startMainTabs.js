@@ -22,9 +22,8 @@ const startTabs = () => {
                     }
                 },
                 {
-                    screen: "awesome-places.SharePlaceScreen",
+                    screen: "trampo.WorkerTimesheetScreen",
                     label: "Timesheet",
-                    title: "Timesheet",
                     icon: sources[1]
                 },
                 {
