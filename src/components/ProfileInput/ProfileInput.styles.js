@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingVertical: 14,
+        paddingVertical: 10,
     },
     title:{
         fontSize: 15,
@@ -15,17 +15,20 @@ const styles = StyleSheet.create({
         fontStyle: "normal",
         letterSpacing: 0,
         color: "#2e2e39",
-        height: 19
+        height: 19,
+        // backgroundColor: 'blue'
     },
-    placeholder:{
+    text:{
         fontSize: 15,
         fontWeight: "600",
         fontStyle: "normal",
         letterSpacing: 0,
-        color: "#dfdfe4",
+        color: "#787993",
         paddingVertical: 0,
         height: 19,
-        textAlign: 'right'
+        textAlign: 'right',
+        // backgroundColor: 'red',
+        minWidth: "45%"
     }
 })
 

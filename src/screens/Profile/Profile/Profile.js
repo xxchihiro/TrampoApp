@@ -8,6 +8,11 @@ class Profile extends Component{
     static navigatorStyle = {
         navBarHidden: true
     };
+    EditHandler = () => {
+        this.props.navigator.push({
+            screen: "trampo.ProfileEditScreen"
+        })
+    }
     render(){
         return(
             <ScrollView style={styles.container}>
@@ -16,7 +21,7 @@ class Profile extends Component{
                         <Text style={styles.logout}>Logout</Text>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Text style={styles.edit}>Edit</Text>
+                        <Text style={styles.edit} onPress={this.EditHandler}>Edit</Text>
                     </TouchableOpacity>
                 </View>
 

@@ -16,6 +16,8 @@ import WorkerTimesheetScreen from "./src/screens/Worker/Timesheet/Timesheet"
 import WorkerJobScreen from './src/screens/Worker/Job/Job'
 
 import ProfileScreen from './src/screens/Profile/Profile/Profile'
+import ProfileEditScreen from './src/screens/Profile/Edit/Edit'
+import ProfileResetPasswordScreen from './src/screens/Profile/ResetPassword/ResetPassword'
 
 import SharePlaceScreen from "./src/screens/_/SharePlace/SharePlace";
 import FindPlaceScreen from "./src/screens/_/FindPlace/FindPlace";
@@ -108,6 +110,23 @@ Navigation.registerComponent(
     store,
     Provider
 );
+
+Navigation.registerComponent(
+    "trampo.ProfileEditScreen",
+    () => ProfileEditScreen,
+    store,
+    Provider
+);
+
+Navigation.registerComponent(
+    "trampo.ProfileResetPasswordScreen",
+    () => ProfileResetPasswordScreen,
+    store,
+    Provider
+);
+
+
+
 
 // Start a App
 Navigation.startSingleScreenApp({

@@ -11,7 +11,7 @@ class Allocation extends Component{
     render(){
         return(
             // TODO: FLATLIST
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
                 <Text style={styles.title}>My Allocation</Text>
                 <View style={styles.listContainer}>
                     <AllocationListItem confirmed={true}/>
@@ -22,7 +22,7 @@ class Allocation extends Component{
                 </View>
 
 
-            </View>
+            </ScrollView>
         )
     }
 }
