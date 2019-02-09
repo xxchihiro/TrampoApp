@@ -29,7 +29,7 @@ class AuthScreen extends Component {
     }
 
     state = {
-        userType: 'supervisor'
+        userType: 'worker'
     }
 
 
