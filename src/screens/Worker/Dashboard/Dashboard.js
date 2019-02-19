@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {View, Text, ScrollView, TouchableOpacity} from 'react-native'
+import {View, Text, ScrollView, TouchableOpacity, AsyncStorage} from 'react-native'
 import styles from './Dashboard.styles'
 import Card from '../../../components/Card/Card'
 import Icon from "react-native-vector-icons/FontAwesome5";
@@ -15,6 +15,13 @@ class Dashboard extends Component {
         this.props.navigator.push({
             screen: "trampo.WorkerJobScreen"
         })
+    }
+    async componentDidMount(){
+        const value = await AsyncStorage.getItem('token');
+        if (value !== null) {
+          // We have data!!
+          console.log(value);
+        }
     }
     render(){
         return(

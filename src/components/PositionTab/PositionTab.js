@@ -1,16 +1,36 @@
 import React, { Component } from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, AsyncStorage} from 'react-native';
 import Icon from "react-native-vector-icons/MaterialIcons";
 import styles from './PositionTab.styles'
+
+
+import startMainTabsWorker from '../../screens/MainTabs/startMainTabsWorker'
+import startMainTabsSupervisor from '../../screens/MainTabs/startMainTabsSupervisor'
+
+import RNRestart from 'react-native-restart';
 
 class PositionTab extends Component{
     state = {
         supervisor: false
     }
-
+    async componentDidMount(){
+        const userType = await AsyncStorage.getItem('userType')
+        if(userType === 'worker'){
+            this.setState({
+                supervisor: false
+            })
+        }else{
+            this.setState({
+                supervisor: true
+            })
+        }
+    }
     toggler = () => {
         this.setState({
             supervisor: !this.state.supervisor
+        }, async () => {
+            await AsyncStorage.setItem('userType', this.state.supervisor? 'supervisor': 'worker')
+            RNRestart.Restart()
         })
     }
     render(){

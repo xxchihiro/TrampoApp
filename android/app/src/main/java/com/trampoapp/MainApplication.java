@@ -3,6 +3,7 @@ package com.trampoapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.avishayil.rnrestart.ReactNativeRestartPackage;
 import com.horcrux.svg.SvgPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
@@ -27,6 +28,7 @@ public class MainApplication extends NavigationApplication {
 		// No need to add RnnPackage and MainReactPackage
 		return Arrays.<ReactPackage>asList(
 		    new MainReactPackage(),
+            new ReactNativeRestartPackage(),
             new SvgPackage(),
 			new VectorIconsPackage()
 		);

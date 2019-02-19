@@ -3,6 +3,12 @@ import { View, TextInput, Button, StyleSheet } from "react-native";
 import styles from './OnboardInput.styles'
 
 class OnboardInput extends Component{
+    state={
+        value: ''
+    }
+    value = () => {
+        return this.state.value
+    }
     render() {
         return (
             <TextInput
@@ -10,6 +16,9 @@ class OnboardInput extends Component{
                 style={this.props.half? styles.halfinput: styles.input}
                 secureTextEntry={this.props.password || false}
                 autoCapitalize={'none'}
+                onChangeText={(value) => {
+                    this.setState({value})
+                }}
                 keyboardType={this.props.email? 'email-address': 'default' }
             />
         );

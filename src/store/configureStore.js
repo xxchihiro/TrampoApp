@@ -1,19 +1,31 @@
-import { createStore, combineReducers, compose } from 'redux';
+import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
+import thunk from "redux-thunk";
+import { composeWithDevTools } from 'remote-redux-devtools';
 
 import placesReducer from './reducers/places';
+import authReducer from './reducers/auth';
 
 const rootReducer = combineReducers({
-    places: placesReducer
+    // places: placesReducer,
+    auth: authReducer
 });
 
-let composeEnhancers = compose;
+const composeEnhancers = composeWithDevTools({ realtime: true, port: 8003 });
 
-if (__DEV__) {
-    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-}
+const configureStore = (initialState) => {
+    const store =  createStore(rootReducer, initialState, composeEnhancers(
+        applyMiddleware(thunk),
+      ));
 
-const configureStore = () => {
-    return createStore(rootReducer, composeEnhancers());
+  if (module.hot) {
+    // Enable hot module replacement for reducers
+    module.hot.accept(() => {
+      const nextRootReducer = rootReducer
+      store.replaceReducer(nextRootReducer);
+    });
+  }
+
+  return store;
 };
 
 export default configureStore;
